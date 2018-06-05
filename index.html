@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            About Me Questions
+        </title>
+        
+        <link rel="stylesheet" href="style2.css"
+    </head>
+    <body>
+        <header>
+            These Are Some Questions About Me
+        </header>
+        <section>
+            <p>
+                I'm John Miester. I'm from Manchester, Iowa. I graduated fro West Delaware High School in 2015 within the top 50 of my class.
+                I was in Scouts all my life and even achieved the highest honor a Boyscout can recieve, the rank of Eagle Scout.
+                I went to Grand View University in Des Moines for one year for medical research but retired fro, the college life because it wasn't working out for me.
+                After leaving Grand View, I moved back home to Manchester where I started working part time for my local Fareway in the meat department for nearly two years. About
+                four months of working at Fareway, I got a full time job working night shift at Farmtek in Dyersville building covers for farm, hoop and green house buildings.
+                While working there, I volunteered to be put in charge of training our new employees until I had to retire from that job half way through May of 2018 so I could take a chance 
+                at learning how to code.
+            </p>
+        </section>
+        <footer>
+            <script>
+                alert('Hello There. You are about  to take a questionare about me.');
+                var name = prompt("What is your name?")
+                console.log('name' + name)
+                var answer = prompt(name + ', Am I legally allowed to drink?');
+                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                    alert('Correct. I am 21 years old.')
+                }
+                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                    alert('Incorrect. I\'m 21 years old.')
+                }
+                else {
+                    alert("I'm sorry, " + name + ", I couldn't understand you. Please try again.")
+                }
+                answer = prompt("I have gone shark fishing before. Yes or No, " + name + "?");
+                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                    alert('Correct. I used to shark fish with my dad\'s side of the family for several years. The largest one I\'ve caught was 6ft long.')
+                }
+                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                    alert('Incorrect. I used to go down to the Gulf of Mexico every Summer and fish for sharks.')
+                }
+                else {
+                    alert("I'm sorry. You need to speak up. I'm hard of hearing")
+                }
+                answer = prompt("I made it into the top 5 bowlers at state bowling my senior year of high school. " + name + " Yes or No?");
+                if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                    alert("Correct. I actually missed the top 5 bowlers in Iowa high school bowling by 7 pins")
+                }
+                else if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                    alert("Incorrect. I missed the top 5 bowlers at Iowa state bowling by 7 pins")
+                }
+                else {
+                    alert('Please speak up. You\'re typing too quietly')
+                }
+                answer = prompt("Did I attain the rank of Eagle in Boy Scouts, " + name + "?");
+                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                    alert('Correct. I am the first person in my family to be an Eagle Scout.')
+                }
+                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                    alert('Incorrect. I actually am the first person in my family to achieve the rank of Eagle Scout.')
+                }
+                else {
+                    alert("I couldn't see what you did there. Please try again")
+                }
+                answer = prompt(name + " Do I prefer movie adaptations of books over reading books?");
+                if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                    alert('Correct. I prefer the books because so many movies have ruined the books I read while I was younger')
+                }
+                else if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                    alert('Incorrect. I prefer books to movie adaptations because some of those movies were awful compared to the books.')
+                }
+                else {
+                    alert("Please retype your answer. There seems to have been a mistake.")
+                }
+
+            </script>
+        </footer>
+
+        <link rel="javascript" href=".eslintrc.json">
+    </body>
+</html>
