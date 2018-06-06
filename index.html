@@ -101,7 +101,29 @@
                 var name = prompt("What is your name?")
                 console.log('name' + name)
 
+                var guess = prompt("What is my favorite number");
+                console.log('Guess is: ' + guess);
+                var guessCount = 6;
+
+                while (guess !== '-13') {
+
+                    if (guess === null){
+                        console.log('Guess is null; breaking');
+
+                    break;
+                }
                 
+                var promptWarning = 'Wrong';
+                if (guess > -13) {
+                    promtWarning = 'TOO High!';
+                } else if (guess < -13) {
+                    promptWarning = 'Too Low. I\'m not that mean';
+                }
+                console.log(promptWarning);
+
+                guess = prompt(promptWarning + ' Keep trying. What is my favorite number');
+
+                console.log('Guess is: ' + guess);
 
                 var answer = prompt(name + ', Am I legally allowed to drink?');
                 if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
