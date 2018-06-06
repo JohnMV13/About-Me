@@ -4,7 +4,7 @@
             About Me Questions
         </title>
         
-        <link rel="stylesheet" href="style2.css"
+        <link rel="stylesheet" href="css/style2.css"
     </head>
     <body>
         <header>
@@ -20,57 +20,63 @@
                 While working there, I volunteered to be put in charge of training our new employees until I had to retire from that job half way through May of 2018 so I could take a chance 
                 at learning how to code.
             </p>
+            <p>
+                
+            </p>
         </section>
         <footer>
             <script>
                 alert('Hello There. You are about  to take a questionare about me.');
                 var name = prompt("What is your name?")
                 console.log('name' + name)
+
+                var while (guess === -13)
+
                 var answer = prompt(name + ', Am I legally allowed to drink?');
-                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                if (answer.toUpperCase().trim() === 'Y' || answer.toUpperCase().trim() === 'YES' ) {
                     alert('Correct. I am 21 years old.')
                 }
-                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                else if (answer.toUpperCase().trim() === 'N' || answer.toUpperCase().trim() === 'NO' ) {
                     alert('Incorrect. I\'m 21 years old.')
                 }
                 else {
                     alert("I'm sorry, " + name + ", I couldn't understand you. Please try again.")
                 }
                 answer = prompt("I have gone shark fishing before. Yes or No, " + name + "?");
-                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                if (answer.toUpperCase().trim() === 'Y' || answer.toUpperCase().trim() === 'YES' ) {
                     alert('Correct. I used to shark fish with my dad\'s side of the family for several years. The largest one I\'ve caught was 6ft long.')
                 }
-                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                else if (answer.toUpperCase().trim() === 'N' || answer.toUpperCase().trim() === 'NO' ) {
                     alert('Incorrect. I used to go down to the Gulf of Mexico every Summer and fish for sharks.')
                 }
                 else {
                     alert("I'm sorry. You need to speak up. I'm hard of hearing")
                 }
                 answer = prompt("I made it into the top 5 bowlers at state bowling my senior year of high school. " + name + " Yes or No?");
-                if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                if (answer.toUpperCase().trim() === 'N' || answer.toUpperCase().trim() === 'NO' ) {
                     alert("Correct. I actually missed the top 5 bowlers in Iowa high school bowling by 7 pins")
                 }
-                else if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                else if (answer.toUpperCase().trim() === 'Y' || answer.toUpperCase().trim() === 'YES' ) {
                     alert("Incorrect. I missed the top 5 bowlers at Iowa state bowling by 7 pins")
                 }
                 else {
                     alert('Please speak up. You\'re typing too quietly')
                 }
                 answer = prompt("Did I attain the rank of Eagle in Boy Scouts, " + name + "?");
-                if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                if (answer.toUpperCase().trim() === 'Y' || answer.toUpperCase().trim() === 'YES' ) {
                     alert('Correct. I am the first person in my family to be an Eagle Scout.')
                 }
-                else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                else if (answer.toUpperCase().trim() === 'N' || answer.toUpperCase().trim() === 'NO' ) {
                     alert('Incorrect. I actually am the first person in my family to achieve the rank of Eagle Scout.')
                 }
                 else {
                     alert("I couldn't see what you did there. Please try again")
                 }
                 answer = prompt(name + " Do I prefer movie adaptations of books over reading books?");
-                if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+                if (answer.toUpperCase().trim() === 'N' || answer.toUpperCase().trim() === 'NO' ) {
                     alert('Correct. I prefer the books because so many movies have ruined the books I read while I was younger')
                 }
-                else if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
+                else if (answer.toUpperCase().trim() === 'Y' || answer.toUpperCase().trim() === 'YES' ) {
                     alert('Incorrect. I prefer books to movie adaptations because some of those movies were awful compared to the books.')
                 }
                 else {
