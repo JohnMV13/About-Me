@@ -92,13 +92,13 @@ else {
     alert("Please retype your answer. There seems to have been a mistake.")
 }
 
-var names = ['Texas', 'Missouri', 'Alabama'];
-console.log(name.length);
-var nameGuess = prompt('Guess which states I vacation in');
-var nameGuessTrimmedToUpper = nameGuess.toUpperCase().trim();
+var names = ['TEXAS', 'MISSOURI', 'ALABAMA'];
+console.log(names.length);
+var nameGuess = prompt('Guess three places I have vacationed at');
+var nameGuessTrimmedToUpper = nameGuess.toUpperCase();
 
-if (names.indexOf(nameGuessTrimmedToUpper) > 0) {
-    alert('Correct! ' + nameGuess + ' is a state I\'ve been to');
-}   else {
-    alert('Incorrect. I don\'t vacation there');
+if (names.indexOf(nameGuessTrimmedToUpper) >= 0) {
+    alert('Correct. ' + nameGuess + 'Is a place I vacation at');
+} else {
+    alert(wrong);
 }

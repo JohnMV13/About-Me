@@ -3,7 +3,7 @@ header {
     font: 40 pt;
 }
 body {
-    background: orange;
+    background: linear-gradient(rgb(255, 136, 0), rgb(2500, 80, 5), rgb(250, 30, 3));
 }
 p {
     color: black;
