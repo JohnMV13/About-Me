@@ -40,6 +40,28 @@ if (isNaN(guess) || guessCount >=7) {
     alert('It took you ' + guessCount + ' guesses to find my favorite number. Congrats!');
 }
 
+function askQuestion(questionText, correctWord, correctMessage, incorrectMessage)
+{
+    var correctLetter = correctWord[0];
+
+    var answer = prompt(questionText).toLowerCase();
+    
+    if (answer === correctWord || answer[0] === correctLetter) {
+        alert('That\'s right, ' + name + '!' + correctMessage);
+    }else {
+            alert(incorrectMessage + " " + name);
+        }
+    console.log('response is' +answer);
+}
+
+var questionText ='Am I legally allowed to drink?'; 
+var correctWord = 'yes';
+var correctMessage = 'Correct, I am 21 years old.';
+var incorrectMessage = 'Incorrect, I am 21 years old.';
+
+askQuestion(questionText, correctWord, correctMessage, incorrectMessage);
+
+
 
 var answer = prompt(name + ', Am I legally allowed to drink?');
 if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {

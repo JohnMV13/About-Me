@@ -10,3 +10,8 @@ p {
     box-sizing: border-box; 
     
 }
+
+section {
+    float: left;
+    padding: 20px;
+}
