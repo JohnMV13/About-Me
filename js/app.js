@@ -62,17 +62,6 @@ var incorrectMessage = 'Incorrect, I am 21 years old.';
 askQuestion(questionText, correctWord, correctMessage, incorrectMessage);
 
 
-
-var answer = prompt(name + ', Am I legally allowed to drink?');
-if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
-    alert('Correct. I am 21 years old.')
-}
-else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
-    alert('Incorrect. I\'m 21 years old.')
-}
-else {
-    alert("I'm sorry, " + name + ", I couldn't understand you. Please try again.")
-}
 answer = prompt("I have gone shark fishing before. Yes or No, " + name + "?");
 if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
     alert('Correct. I used to shark fish with my dad\'s side of the family for several years. The largest one I\'ve caught was 6ft long.')
@@ -97,7 +86,7 @@ answer = prompt("Did I attain the rank of Eagle in Boy Scouts, " + name + "?");
 if (answer.toUpperCase() === 'Y' || answer.toUpperCase() === 'YES' ) {
     alert('Correct. I am the first person in my family to be an Eagle Scout.')
 }
-else if (answer.toUpperCase() === 'N' || answer.toUpperCase() === 'NO' ) {
+else if (answer.toUpperCase() === 'N' && answer.toUpperCase() === 'NO' ) {
     alert('Incorrect. I actually am the first person in my family to achieve the rank of Eagle Scout.')
 }
 else {
@@ -114,13 +103,19 @@ else {
     alert("Please retype your answer. There seems to have been a mistake.")
 }
 
-var names = ['TEXAS', 'MISSOURI', 'ALABAMA'];
-console.log(names.length);
-var nameGuess = prompt('Guess three places I have vacationed at');
-var nameGuessTrimmedToUpper = nameGuess.toUpperCase();
+var states = ['TEXAS', 'MISSOURI', 'ALABAMA'];
+console.log(states.length);
+var stateGuess = prompt('Guess three places I have vacationed at or type 999 to exit prompt');
+var stateGuessTrimmedToUpper = stateGuess.toUpperCase().trim();
 
-if (names.indexOf(nameGuessTrimmedToUpper) >= 0 || names.indexOf(nameGuessTrimmedToUpper) <= 3) {
-    alert('Correct. ' + nameGuess + ' is a place I vacation at');
-} else {
-    alert(wrong);
+while(stateGuessTrimmedToUpper !== "999") {
+
+    if (states.indexOf(stateGuessTrimmedToUpper) >= 0 && states.indexOf(stateGuessTrimmedToUpper) < states.length) {
+        alert('Correct. ' + stateGuess + ' is a place I vacation at');
+    } else {
+        alert("wrong");
+    }
+    stateGuess = prompt('Guess three places I have vacationed at or type 999 to exit prompt');
+    stateGuessTrimmedToUpper = stateGuess.toUpperCase().trim();
+
 }

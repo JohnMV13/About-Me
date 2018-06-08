@@ -3,7 +3,7 @@ header {
     font: 40pt;
 }
 body {
-    background: linear-gradient(rgb(255, 136, 0), rgb(2500, 80, 5), rgb(250, 30, 3));
+    background: linear-gradient(rgba(255, 136, 0), rgba(250, 100, 5), rgba(250, 60, 3));
 }
 p {
     color: black;
@@ -11,7 +11,25 @@ p {
     
 }
 
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
 section {
+    padding: 1px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.middle{
+    width: 209px;
     float: left;
-    padding: 20px;
+    
+}
+#col1 {
+    
+}
+#col2{
+    
 }
